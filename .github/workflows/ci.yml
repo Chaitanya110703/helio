@@ -89,7 +89,7 @@ jobs:
 
   build-macos:
     runs-on: macos-latest
-    if: ${{ false }}  # Disabled due to mysterious segfaults in fibers_test ✨
+    if: ${{ true }}  # Disabled due to mysterious segfaults in fibers_test ✨
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
